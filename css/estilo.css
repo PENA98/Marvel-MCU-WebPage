@@ -306,6 +306,14 @@ section.video {
     overflow-x: hidden;
     z-index: 1;
 }
+.contenedor-video1 img{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    z-index: 1;
+}
 
 .video {
     height: 100%;
@@ -364,3 +372,48 @@ section.video {
 }
 /*ssssssssssssssssssssssssssssssssssssssssssssssssss*/
 
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    color: #fbf9fa;
+}
+
+.grid div{
+    margin: 10px;
+}
+.grid img{
+    width: 1fr;
+    height: 1fr;
+}
+.sidebar{
+    grid-column: 4/4;
+    grid-row: 1/5;
+}
+.gridMaster{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    color: #fbf9fa;
+    margin-bottom: 20px;
+
+}
+.grid{
+    position: absolute;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    z-index: 3;
+}
+.grid img:hover{
+    zoom: 100;
+}
+
+.ir_arriba{
+    cursor: pointer;
+}
