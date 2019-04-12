@@ -229,7 +229,7 @@ el menu se sobreposicione */
 /*Footer*/
 .footer-sitio {
     background-color: var(--footer);
-    margin-top: 30px;
+    margin-top: 0px;
     padding-top: 10px;
     text-align: center;
 }
@@ -391,7 +391,7 @@ section.video {
 }
 .sidebar{
     grid-column: 4/4;
-    grid-row: 1/5;
+    grid-row: 1/4;
 }
 .gridMaster{
     height: 100%;
@@ -411,9 +411,25 @@ section.video {
     z-index: 3;
 }
 .grid img:hover{
-    zoom: 100;
+    transform: scale(1.05);
 }
 
 .ir_arriba{
     cursor: pointer;
+}
+.sidebar ul{
+    background-color: rgba(102, 48, 48, 0.25);
+    list-style: none;
+    padding: 10px;
+}
+.sidebar ul li:hover {
+    background-color: #a80038;
+}
+.sidebar ul li a {
+    color: #fbf9fa;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+.sidebar a{
+    padding: 10px;
 }
